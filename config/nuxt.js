@@ -8,5 +8,9 @@ module.exports = {
   mode: 'spa',
   router: {
     base: '/admin/'
+  },
+  buildModules: ['@nuxtjs/tailwindcss'],
+  tailwindcss: {
+    cssPath: resolve(__dirname, '..', 'resources/assets/css/admin.css')
   }
 }
