@@ -11,6 +11,6 @@ module.exports = {
   },
   buildModules: ['@nuxtjs/tailwindcss'],
   tailwindcss: {
-    cssPath: resolve(__dirname, '..', 'resources/assets/css/admin.css')
+    cssPath: '~/assets/css/admin.css'
   }
 }

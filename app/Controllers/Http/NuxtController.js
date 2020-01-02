@@ -1,10 +1,5 @@
 'use strict'
 
-// const { Nuxt, Builder } = require("nuxt");
-
-// Require Nuxt config
-// const config = require("../../../config/nuxt");
-
 class NuxtController {
   constructor() {
     this.nuxt = use('Service/Nuxt')

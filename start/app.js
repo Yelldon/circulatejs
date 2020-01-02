@@ -1,6 +1,6 @@
-"use strict";
+'use strict'
 
-const path = require("path");
+const path = require('path')
 
 /*
 |--------------------------------------------------------------------------
@@ -13,16 +13,16 @@ const path = require("path");
 |
 */
 const providers = [
-  "@adonisjs/framework/providers/AppProvider",
-  "@adonisjs/framework/providers/ViewProvider",
-  "@adonisjs/lucid/providers/LucidProvider",
-  "@adonisjs/bodyparser/providers/BodyParserProvider",
-  "@adonisjs/cors/providers/CorsProvider",
-  "@adonisjs/shield/providers/ShieldProvider",
-  "@adonisjs/session/providers/SessionProvider",
-  "@adonisjs/auth/providers/AuthProvider",
-  path.join(__dirname, "..", "providers", "NuxtProvider")
-];
+  '@adonisjs/framework/providers/AppProvider',
+  '@adonisjs/framework/providers/ViewProvider',
+  '@adonisjs/lucid/providers/LucidProvider',
+  '@adonisjs/bodyparser/providers/BodyParserProvider',
+  '@adonisjs/cors/providers/CorsProvider',
+  '@adonisjs/shield/providers/ShieldProvider',
+  '@adonisjs/session/providers/SessionProvider',
+  '@adonisjs/auth/providers/AuthProvider',
+  path.join(__dirname, '..', 'providers', 'NuxtProvider')
+]
 
 /*
 |--------------------------------------------------------------------------
@@ -33,7 +33,7 @@ const providers = [
 | Providers for migrations, tests etc.
 |
 */
-const aceProviders = ["@adonisjs/lucid/providers/MigrationsProvider"];
+const aceProviders = ['@adonisjs/lucid/providers/MigrationsProvider']
 
 /*
 |--------------------------------------------------------------------------
@@ -47,7 +47,7 @@ const aceProviders = ["@adonisjs/lucid/providers/MigrationsProvider"];
 |   { Route: 'Adonis/Src/Route' }
 |
 */
-const aliases = {};
+const aliases = {}
 
 /*
 |--------------------------------------------------------------------------
@@ -57,6 +57,6 @@ const aliases = {};
 | Here you store ace commands for your package
 |
 */
-const commands = ["App/Commands/NuxtBuild"];
+const commands = ['App/Commands/NuxtBuild']
 
-module.exports = { providers, aceProviders, aliases, commands };
+module.exports = { providers, aceProviders, aliases, commands }

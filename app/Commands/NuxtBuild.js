@@ -9,7 +9,7 @@ class NuxtBuild extends Command {
   }
 
   static get description() {
-    return 'Tell something helpful about this command'
+    return 'Build the admin for the site.'
   }
 
   async handle(args, options) {
