@@ -1,4 +1,7 @@
 export const state = () => ({
+  settings: {
+    title: 'Circulate JS'
+  },
   menu: [
     {
       name: 'Home',

@@ -4,3 +4,10 @@
 
 @import '../../../node_modules/quill/dist/quill.core.css';
 @import '../../../node_modules/quill/dist/quill.bubble.css';
+
+.ql-editor {
+  @apply .text-base .p-0 !important;
+}
+.ql-editor.ql-blank::before {
+  left: 0;
+}

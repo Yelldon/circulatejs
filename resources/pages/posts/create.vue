@@ -1,6 +1,7 @@
 <template>
-  <div class="flex w-full">
-    <div class="w-full" ref="editor"></div>
+  <div class="flex flex-col p-10">
+    <input type="text" class="mb-4" placeholder="Title" />
+    <div class="w-full text-lg" ref="editor"></div>
   </div>
 </template>
 
@@ -12,7 +13,7 @@ export default {
       editor: null,
       options: {
         // debug: 'info',
-        placeholder: 'Compose an epic...',
+        placeholder: 'Your amazing article starts here...',
         theme: 'bubble'
       },
       data: {
@@ -22,7 +23,6 @@ export default {
   },
   mounted() {
     this.editor = new Quill(this.$refs.editor, this.options)
-    console.log(this.editor)
   },
   watch: {
     editor: {
@@ -34,3 +34,5 @@ export default {
   }
 }
 </script>
+
+<style lang="postcss" scoped></style>
